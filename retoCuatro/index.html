@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+
+  
+</head>
+<body>
+  <div id="controls">
+    <div style="text-align:center">
+      <h1>The People's Pixelator Based Algorithm</h1>
+      <h2>for crypto-gallery-art</h2>
+      <label style="display:block" class='instructions'>Input the name of the art to generate properties</label>
+    </div>
+    <p id="image">
+      <label>Title:</label>
+      <input type="text" name="Title" id="inputTitle" onchange="getKeccak256()">
+      <a href="#" onclick="callMain()">Generar</a>
+    </p>
+  </div>
+  
+</div>
+<div class="container">
+  <canvas id="result"></canvas>
+  <a href="#" onclick="downloadIt()">Download Image</a>  
+</div>
+
+
+<script src="https://firebasestorage.googleapis.com/v0/b/crypto-gallery-art.appspot.com/o/scripts%2Fmain.js?alt=media"></script>
+<script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js"></script>
+<script src='main.js'></script>
+
+</body>
+</html>
